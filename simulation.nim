@@ -48,8 +48,8 @@ for gen in 0 ..< generations:
           endDeme.size.inc
   startDeme = endDeme 
 
-
 var output = open(outfile, fmWrite)
 for i in endDeme.members:
+  # output.writeLine("")
   output.writeLine(i.junctions.join(","))
 output.close()
