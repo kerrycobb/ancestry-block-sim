@@ -1,3 +1,5 @@
+#TODO: procs to compute block length range and mean
+#TODO: procs to compute centimorgans given the haplotype length and recombination probabilities
 ## This module contains the Junctions type wich is a `distinct seq[int]` with some
 ## borrowed procs. 
 ## Each int in Junctions corresponds to the beginning of a new ancestry block.
