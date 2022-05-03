@@ -68,6 +68,7 @@ for gen in 0 ..< generations:
   # Migration from neighbor to edge
   migration(startDemes[1], endDemes[0], 2, recombination, selection)
   migration(startDemes[0], endDemes[1], 2, recombination, selection)
+
   # Migration from edge to neighbor
   migration(startDemes[demeNum-2], endDemes[demeNum-1], 2, recombination, selection)
   migration(startDemes[demeNum-1], endDemes[demeNum-2], 2, recombination, selection)
