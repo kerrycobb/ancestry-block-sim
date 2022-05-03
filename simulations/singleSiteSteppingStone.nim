@@ -90,7 +90,7 @@ proc simulation(outfile: string, seed=1234) =
     startDemes = endDemes
   
   var 
-    # output = open(outfile, fmWrite)
+    output = open(outfile, fmWrite)
     metaData = %*{
       "seed": seed, 
       "selection": selection,
