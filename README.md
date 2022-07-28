@@ -8,7 +8,7 @@ See `/simulations` for examples.
 
 #### Heterozygote disadvantage with single site in panmictic population
 ```bash
-nim c -d:release singeSiteSteppingStone.nim
+nim c -d:release singeSitePanmictic.nim
 ./singleSitePanmictic -g=1_000 -s=100 -d=1_000 -l=1_000_000 -p=500_000 -r=1e-6 --seed=12345 -o singleSitePanmictic.out
 ```
 Run `./singleSitePanmictic --help` for list of arguments
