@@ -16,13 +16,13 @@ proc mating(startDeme: Deme, endDeme: var Deme, recombProb, selection: float) =
     hap2 = sample(startDeme.members) 
   if hap1.data.allele == hap2.data.allele: 
     if rand(1.0) < recombProb:
-      endDeme.add(recombine(hap1, hap2, rand(hap1.len-1)))
+      endDeme.add(recombine(hap1, hap2, rand(hap1.len-2)))
     else:
       endDeme.add(hap1)
   else:
     if rand(1.0) < selection:
       if rand(1.0) < recombProb:
-        endDeme.add(recombine(hap1, hap2, rand(hap1.len-1)))
+        endDeme.add(recombine(hap1, hap2, rand(hap1.len-2)))
       else:
         endDeme.add(hap1)
 
