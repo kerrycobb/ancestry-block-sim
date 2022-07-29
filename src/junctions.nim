@@ -12,9 +12,9 @@
 import ./ancestry
 import std/strutils
 
-type Inheriting* = enum inheritingA, inheritingB
+type Inheriting = enum inheritingA, inheritingB
 
-proc toggle*(i: var Inheriting) = 
+proc toggle(i: var Inheriting) = 
   i = cast[Inheriting](i.ord xor inheritingB.ord)
 
 
