@@ -31,7 +31,6 @@ proc recombine*(a, b: Haplotype[SingleSite], breakPoints: seq[int]): Haplotype[S
   assert a.len == b.len
   assert a.data.pos == a.data.pos
   apply(breakPoints, proc(x: int) = assert x < a.len)
-  apply(breakPoints, proc(x: int) = assert x > 0)
   result.len = a.len
   result.data.pos = a.data.pos
   result.junctions = recombine(a.junctions, b.junctions, breakPoints)
