@@ -50,12 +50,13 @@ proc simulation(replicates, generations, sampleSize, demeSize, length,
     simulationMetaData = %*{
       "simulation type": "single site pancmictic",
       "replicates": replicates,
-      "seed": seed, 
       "generations": generations, 
+      "sample size": sampleSize,
       "deme size": demeSize,
       "length": length,
       "site position": position,
       "recombination rate": recombRate,
+      "seed": seed, 
     } 
   output.writeLine($simulationMetaData)
 
