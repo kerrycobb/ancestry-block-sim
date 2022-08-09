@@ -20,7 +20,7 @@ proc mating(startDeme: Deme, endDeme: var Deme, recombRate, selection: float) =
     else:
       endDeme.add(hap1)
   else:
-    if rand(1.0) < selection:
+    if rand(1.0) > selection:
       if rand(1.0) < recombRate:
         endDeme.add(recombine(hap1, hap2, rand(hap1.len-1)))
       else:
